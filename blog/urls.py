@@ -18,4 +18,5 @@ from .views import *
 
 urlpatterns = [
     url(r'^$', PostLV.as_view(), name='post_list'),
+    url(r'^post/(?P<pk>\d+)/$', PostDV.as_view(), name='post_detail'),
 ]
